@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'cs_regular';
+    src: url('cs_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Friz Quadrata Regular';
+    src: url('Friz Quadrata Regular.ttf') format('truetype');
+}
+:root{
+    --dark: #1f1f1f;
+    --light: #ffffff;
+    --lol: #73d3f6;
+    --cs: #ff9747;
+}
+
+header{
+    position: absolute;
+    width: 99.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+body{
+    width: 99.06vw;
+    height: 300vh;
+    margin: 0px;
+    background: var(--dark);
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+    height: 300vh;
+}
+
+h1{
+    color: var(--light)
+}
+
+h2{
+    position: absolute;
+    font-size: 3.5vmin;
+    color: var(--light)
+}
+
+p{
+    color: var(--light)
+}
+
+.lol{
+    background: var(--dark);
+    z-index: 2;
+    width: 95vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.zakladka{
+    position: fixed;
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lol > .zakladka > h2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Friz Quadrata Regular', sans-serif;
+}
+
+.cs > .zakladka > h2{
+    writing-mode: vertical-lr;
+    font-family: 'cs_regular', sans-serif;
+}
+
+.cs{
+    background: var(--dark);
+    z-index: 1;
+    width: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.lol > .drabinka{
+    background: transparent;
+    width: 94.7%;
+    height: 25%;
+    margin-top: 5%;
+    margin-left: 5vw;
+    display: flex;
+    gap: 1vmin
+}
+
+.column{
+    background: transparent;
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mecz{
+    background: transparent;
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1vmin
+}
+
+.card{
+    background: var(--light);
+    width: 90%;
+    height: 45%;
+}
+
+.cs > .drabinka{
+    background: transparent;
+    margin-top: 5%;
+    width: 89.1vw;
+    height: 25%;
+    display: flex;
+    gap: 1vmin;
+    transform: translateX(-5vw);
+}
+
+.lol > .regulamin{
+    margin-left: 7vw;
+    margin-right: 2vw;
+}
+
+.cs > .regulamin{
+    margin-right: 7vw;
+    margin-left: 2vw;
+}
+
+.line{
+    position: absolute;
+    width: 1vmin;
+    height: 1000vmin;
+    z-index: 4;
+}
+
+.line2{
+    position: absolute;
+    width: 1vmin;
+    height: 1000vmin;
+    z-index: 4;
+}
+
+.lol > .line{
+    background: var(--lol);
+    transform: translateX(94vw);
+}
+
+.cs > .line{
+    background: var(--cs);
+    transform: translateX(-94vw);
+}
+
+.lol > .line2{
+    background: var(--lol);
+    transform: translateX(4.55vw);
+}
+
+.cs > .line2{
+    background: var(--cs);
+    transform: translateX(-4.55vw);
+}
+
+.cs > .regulamin > h3{
+    color: var(--cs);
+}
+
+.lol > .regulamin > h3{
+    color: var(--lol);
+}
+
+::selection{
+    background-color: var(--light);
+    color: var(--dark);
+}
